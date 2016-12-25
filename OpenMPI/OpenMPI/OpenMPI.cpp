@@ -4,7 +4,7 @@
  The master then merges to create a sorted array.
  *****/
 // Comment from a branch
-// Comment from branch 2
+// Another Comment from branch 2
 
 #include "stdafx.h"
 #include "mpi.h"
