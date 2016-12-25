@@ -3,6 +3,7 @@
  Distribute an unsorted array from a master to multiple workers which sort their part and return. 
  The master then merges to create a sorted array.
  *****/
+// Comment from a branch
 
 #include "stdafx.h"
 #include "mpi.h"
