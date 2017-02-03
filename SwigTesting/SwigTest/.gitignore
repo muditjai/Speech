@@ -1,0 +1,7 @@
+x64/
+__pycache__/
+*.sdf
+*.opensdf
+*.pyd
+*.py
+*_wrap*
