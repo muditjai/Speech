@@ -1,17 +1,17 @@
-/*#include "cmath"
+#include "cmath"
 #include <iostream>
 
-class SigmoidNode
+class SigmoidNodeClass
 {
     double m_sigmoidResult;
 public:
-    SigmoidNode();
+    SigmoidNodeClass();
 
     double doForwardProp(double input);
 
     double doBackProp(double globalGradient);
 
-};*/
+};
 
 
 extern int add(int a, int b);
