@@ -71,6 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\src\muditj\StaticDynamicLibrary\DynamicLibrary;D:\src\muditj\StaticDynamicLibrary\StaticLibrary;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -151,6 +152,14 @@
   <ItemGroup>
     <ClCompile Include="ApplicationWithLibraries.cpp" />
     <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicLibrary\DynamicLibrary.vcxproj">
+      <Project>{29a3baf4-966c-4230-a55a-f14b76cf6837}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticLibrary\StaticLibrary.vcxproj">
+      <Project>{f1a66346-8dff-40d6-9116-5584ec423db0}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
