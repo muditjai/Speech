@@ -1,12 +1,7 @@
 #pragma once
 #include<memory>
-#ifdef _WIN32
-#ifdef DYNAMICLIBRARY_EXPORTS  
-#define DYNAMICLIBRARY_API __declspec(dllexport)
-#else
-#define DYNAMICLIBRARY_API __declspec(dllimport)
-#endif
-#endif // _WIN32
+#include "IFloatMath.h"
+
 
 /*
 With just this class, 
@@ -19,17 +14,18 @@ ordinal    name
 
 */
 
-class /*DYNAMICLIBRARY_API*/ FloatMath
+class /*DYNAMICLIBRARY_API*/ FloatMath : public IFloatMath
 {
 public:
     //#define DYNAMICLIBRARY_API
     //DYNAMICLIBRARY_API FloatMath(int);
     FloatMath(void) = default;
-    float DYNAMICLIBRARY_API divide(float a, float b);
+    virtual void Release(void) override;
+    float DYNAMICLIBRARY_API divide(float, float) override;
 
-    int DYNAMICLIBRARY_API modulo(float a, float b);
+    int DYNAMICLIBRARY_API modulo(float, float) override;
 
-    float DYNAMICLIBRARY_API multiply(float a, float b);
+    float DYNAMICLIBRARY_API multiply(float, float);
 
     int ceil(float a);
 
@@ -37,3 +33,5 @@ public:
 private:
     std::shared_ptr<FloatMath> m_floatPtr;
 };
+
+
