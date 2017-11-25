@@ -6,8 +6,16 @@
 #include<iostream>
 #include <vector>
 #include <algorithm>
+#include <chrono>
+#include <numeric>
 
+using std::cout;
+using std::endl;
 using std::vector;
+using std::chrono::system_clock;
+using std::chrono::time_point; 
+using std::chrono::duration_cast;
+using std::chrono::milliseconds;
 
 class thread_guard
 {
@@ -71,6 +79,26 @@ template <typename T>
 T addParallel(vector<T> input);
 template int addParallel(vector<int> input);
 
+void getResultAndTime(vector<int>& input)
+{
+    time_point<system_clock> start, end;
+    start = system_clock::now();
+    int result = addParallel<int>(input);
+    end = system_clock::now();
+
+    std::cout << "Parallel Time taken " << duration_cast<milliseconds>(end - start).count() << std::endl;
+    std::cout << "Parallel add " << result << std::endl;
+
+    start = system_clock::now();
+    result = std::accumulate(input.begin(), input.end(), 0);
+    end = system_clock::now();
+
+    std::cout << "Serial Time taken " << duration_cast<milliseconds>(end - start).count() << std::endl;
+    std::cout << "Serial add " << result << std::endl;
+
+
+}
+
 int main()
 {
     //std::cout << "main thread" << std::this_thread::get_id() << " " << std::thread::hardware_concurrency() << std::endl;
@@ -85,8 +113,15 @@ int main()
     //runMultileThreads();
 
     std::vector<int> input{ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
-    int result = addParallel<int>(input);
-    std::cout << "Parallel add " << result << std::endl;
+
+    getResultAndTime(input);
+    cout << endl;
+
+    input.resize(0);
+    int total_elem = 1e8;
+    input.resize(total_elem);
+    std::iota(input.begin(), input.end(), 0);
+    getResultAndTime(input);
     return 0;
 }
 

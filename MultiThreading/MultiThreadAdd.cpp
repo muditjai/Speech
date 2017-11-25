@@ -28,10 +28,10 @@ T addParallel(vector<T> input)
         num_threads = 2;
     }
 
-    num_threads = std::min(num_threads, static_cast<int>(input.size() / min_block_size));
+    num_threads = std::min(num_threads, static_cast<int>(std::floor(input.size() / min_block_size)));
     //num_threads = 0;
 
-    size_t actual_block_size = input.size() / num_threads;
+    size_t actual_block_size = std::floor(input.size() / num_threads);
 
     cout << "Actual block size " << actual_block_size << " Input size " << input.size() << " num_threads " << num_threads << endl;
 
@@ -46,6 +46,7 @@ T addParallel(vector<T> input)
         results.push_back(std::async(std::launch::async, [start, end] {return std::accumulate(start, end, T()); }));
         start = end;
     }
+
     if (end != input.end())
     {
         //main thread completes remainining work. 
