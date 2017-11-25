@@ -2,4 +2,5 @@ Debug/
 ipch/  
 MultiThreading.VC.db 
 MultiThreading.VC.VC.opendb
-eading.vcxproj.filters 
+MultiThreading.vcxproj.filters 
+.vs/
