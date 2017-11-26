@@ -1,7 +1,10 @@
 
 *.exe
-
-
-
+Debug
+*db
+*.vs
+*.sdf
+*.suo
+*.user
 *.exp
 *.lib
