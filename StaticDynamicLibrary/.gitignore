@@ -2,4 +2,6 @@ x64
 .vs
 StaticDynamicLibrary.VC.db
 StaticDynamicLibrary.VC.VC.opendb
-
+DynamicLibrary/Debug
+StaticLibrary/Debug
+Debug
