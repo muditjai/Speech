@@ -33,11 +33,11 @@ __global__ void inverseEdgeDetect(float *d_output, float *d_input, \
      */
 
 
-    row = blockIdx.x*blockDim.x + threadIdx.x + 1;
+    col = blockIdx.x*blockDim.x + threadIdx.x + 1;
     /*
      * loop over all columns of the image
      */
-    for (col = 1; col <= N; col++) {
+    for (row = 1; row <= N; row++) {
         /*
          * calculate linear index from col and row, for the centre
          * and neighbouring points needed below.
