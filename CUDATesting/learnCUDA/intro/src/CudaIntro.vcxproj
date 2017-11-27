@@ -151,8 +151,14 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <CudaCompile Include="..\..\reconstruct\src\reconstruct.cu" />
+    <CudaCompile Include="..\..\reconstruct\src\reconstruct_kernels.cu" />
+    <CudaCompile Include="..\..\reconstruct\src\utilities.cu" />
     <CudaCompile Include="intro.cu" />
     <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\reconstruct\src\reconstruct.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

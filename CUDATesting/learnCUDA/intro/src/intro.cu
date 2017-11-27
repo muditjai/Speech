@@ -43,7 +43,7 @@ __global__ void negate_multiblock(int *d_a)
 #define THREADS_PER_BLOCK 32
 
 /* Main routine */
-int main(int argc, char *argv[])
+int main2(int argc, char *argv[])
 {
     int *h_a, *h_out;
     int *d_a;
@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
 
 
 /* Utility function to check for and report CUDA errors */
-void checkCUDAError(const char *msg)
+void checkCUDAError1(const char *msg)
 {
     cudaError_t err = cudaGetLastError();
     if( cudaSuccess != err) 

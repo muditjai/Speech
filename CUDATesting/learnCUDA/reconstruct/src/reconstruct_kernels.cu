@@ -11,49 +11,52 @@
 #include <math.h>
 
 #include <sys/types.h>
-#include <sys/time.h>
+//#include <sys/time.h>
 
 #include "reconstruct.h"
+#include <cuda_runtime_api.h>
+//#include <cuda.h>
+#include "device_launch_parameters.h"
 
 /* The actual CUDA kernel that runs on the GPU - 1D version by column */
 __global__ void inverseEdgeDetect(float *d_output, float *d_input, \
-					float *d_edge)
+    float *d_edge)
 {
-  int col, row;
-  int idx, idx_south, idx_north, idx_west, idx_east;
-  int numcols = N + 2;
+    int col, row;
+    int idx, idx_south, idx_north, idx_west, idx_east;
+    int numcols = N + 2;
 
-  /*
-   * calculate global row index for this thread  
-   * from blockIdx.x, blockDim.x and threadIdx.x
-   * remember to add 1 to account for halo    
-   */
+    /*
+     * calculate global row index for this thread
+     * from blockIdx.x, blockDim.x and threadIdx.x
+     * remember to add 1 to account for halo
+     */
 
 
-  row = blockIdx.x*blockDim.x + threadIdx.x + 1;
-  /*
-   * loop over all columns of the image
-   */
-  for (col = 1; col <= N; col++) {
-      /*
-       * calculate linear index from col and row, for the centre
-       * and neighbouring points needed below.
-       * For the neighbouring points you need to add/subtract 1  
-       * to/from the row or col indices.
-       */
-      
-      idx = row * numcols + col;
-      idx_south = (row - 1) * numcols + col;
-      idx_north = (row + 1) * numcols + col;
-      
-      idx_west = row * numcols + (col - 1);
-      idx_east = row * numcols + (col + 1);
-      
+    row = blockIdx.x*blockDim.x + threadIdx.x + 1;
+    /*
+     * loop over all columns of the image
+     */
+    for (col = 1; col <= N; col++) {
+        /*
+         * calculate linear index from col and row, for the centre
+         * and neighbouring points needed below.
+         * For the neighbouring points you need to add/subtract 1
+         * to/from the row or col indices.
+         */
 
-      /* perform stencil operation */  
-      d_output[idx] = (d_input[idx_south] + d_input[idx_west] \
-		       + d_input[idx_north] + d_input[idx_east] - \
-		       d_edge[idx]) * 0.25;
+        idx = row * numcols + col;
+        idx_south = (row - 1) * numcols + col;
+        idx_north = (row + 1) * numcols + col;
+
+        idx_west = row * numcols + (col - 1);
+        idx_east = row * numcols + (col + 1);
+
+
+        /* perform stencil operation */
+        d_output[idx] = (d_input[idx_south] + d_input[idx_west] \
+            + d_input[idx_north] + d_input[idx_east] - \
+            d_edge[idx]) * 0.25;
 
     }
 }

@@ -10,17 +10,23 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include <sys/types.h>
-#include <sys/time.h>
-
-
+//#include <sys/types.h>
+//#include <sys/time.h>
+#include<chrono>
+#include <cuda_runtime_api.h>
+#include <cuda.h>
+#include "device_launch_parameters.h"
 /* Utility Functions */
+
+using std::chrono::time_point;
+using std::chrono::system_clock;
 
 /*
  * Function to get an accurate time reading
  */
-double get_current_time()
+time_point<system_clock> get_current_time()
 {
+    /*
    static int start = 0, startu = 0;
    struct timeval tval;
    double result;
@@ -36,6 +42,8 @@ double get_current_time()
       result = (double) (tval.tv_sec - start) + 1.0e-6*(tval.tv_usec - startu);
 
    return result;
+   */
+   return std::chrono::system_clock::now();
 }
 
 
@@ -69,7 +77,7 @@ void datread(char *filename, void *vx, int nx, int ny)
     for (i=0; i<nx; i++)
     {
       fscanf(fp,"%d", &t);
-      x[(ny-j-1)*nx + i] = t;
+      x[(ny-j-1)*nx + i] = (float)t;
     }
   }
 

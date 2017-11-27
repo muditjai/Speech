@@ -6,5 +6,8 @@ Debug
 *.sdf
 *.suo
 *.user
+*.dat
+*.pgm
+*.deps
 *.exp
 *.lib
