@@ -12,8 +12,9 @@
 /* dimension of the image is NxX */
 #define N 2048
 
-#define THREADSPERBLOCK 128
-
+#define THREADSPERBLOCK 256
+#define  THREADPERBLOCK_X 128
+#define  THREADPERBLOCK_Y 128
 
 /* Number of iterations to run */
 #define ITERATIONS 100

@@ -90,8 +90,8 @@ int main(int argc, char *argv[])
     for (i = 0; i < ITERATIONS; i++) {
         /* run the kernel */
 
-        dim3 blocksPerGrid(N / THREADSPERBLOCK, 1, 1);
-        dim3 threadsPerBlock(THREADSPERBLOCK, 1, 1);
+        dim3 blocksPerGrid(N / THREADPERBLOCK_X, N / THREADPERBLOCK_Y, 1);
+        dim3 threadsPerBlock(THREADPERBLOCK_X, THREADPERBLOCK_Y, 1);
         inverseEdgeDetect <<< blocksPerGrid, threadsPerBlock >>> (d_output, d_input, d_edge);
 
         cudaThreadSynchronize();
