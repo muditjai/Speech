@@ -1,0 +1,6 @@
+C:\Code\Speech\NeuralNetCsharp\bin\Debug\NeuralNetCsharp.exe.config
+C:\Code\Speech\NeuralNetCsharp\bin\Debug\NeuralNetCsharp.exe
+C:\Code\Speech\NeuralNetCsharp\bin\Debug\NeuralNetCsharp.pdb
+C:\Code\Speech\NeuralNetCsharp\obj\Debug\NeuralNetCsharp.csprojResolveAssemblyReference.cache
+C:\Code\Speech\NeuralNetCsharp\obj\Debug\NeuralNetCsharp.exe
+C:\Code\Speech\NeuralNetCsharp\obj\Debug\NeuralNetCsharp.pdb

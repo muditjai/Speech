@@ -1,0 +1,2059 @@
+event: ns : Nanoseconds
+events: ns
+summary: 4264129764
+fl=<frozen importlib._bootstrap>
+fn=_new_module
+35 7293
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:74
+74 8387
+cfl=~
+cfn=<built-in method _thread.allocate_lock>
+calls=10 0
+74 13128
+
+fl=<frozen importlib._bootstrap>
+fn=acquire
+94 10940
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=5 0
+94 1094
+
+fl=<frozen importlib._bootstrap>
+fn=release
+119 14951
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=5 0
+119 1094
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:159
+159 2552
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:163
+163 10940
+cfl=<frozen importlib._bootstrap>
+cfn=acquire
+calls=5 94
+163 12034
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock
+calls=5 176
+163 37561
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=5 0
+163 729
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:170
+170 5105
+cfl=<frozen importlib._bootstrap>
+cfn=release
+calls=5 119
+170 16045
+
+fl=<frozen importlib._bootstrap>
+fn=_get_module_lock
+176 16045
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:74
+calls=5 74
+176 21515
+
+fl=<frozen importlib._bootstrap>
+fn=cb
+190 2552
+
+fl=<frozen importlib._bootstrap>
+fn=_call_with_frames_removed
+214 5105
+cfl=~
+cfn=<built-in method builtins.__import__>
+calls=1 0
+214 651668
+cfl=~
+cfn=<built-in method builtins.exec>
+calls=5 0
+214 5236690
+
+fl=<frozen importlib._bootstrap>
+fn=_verbose_message
+225 2917
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:310
+310 2552
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:314
+314 3282
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:321
+321 16774
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=5 225
+321 2917
+cfl=~
+cfn=<built-in method builtins.any>
+calls=5 0
+321 8752
+
+fl=<frozen importlib._bootstrap>
+fn=<genexpr>
+324 3646
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:372
+372 5834
+
+fl=<frozen importlib._bootstrap>
+fn=cached
+406 6564
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_cached
+calls=5 342
+406 80227
+
+fl=<frozen importlib._bootstrap>
+fn=parent
+419 3282
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=4 0
+419 1823
+
+fl=<frozen importlib._bootstrap>
+fn=has_location
+427 364
+
+fl=<frozen importlib._bootstrap>
+fn=_init_module_attrs
+510 29173
+cfl=<frozen importlib._bootstrap>
+cfn=cached
+calls=10 406
+510 86791
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=5 419
+510 5105
+cfl=<frozen importlib._bootstrap>
+cfn=has_location
+calls=5 427
+510 364
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=30 0
+510 18598
+
+fl=<frozen importlib._bootstrap>
+fn=module_from_spec
+570 9481
+cfl=<frozen importlib._bootstrap>
+cfn=_new_module
+calls=5 35
+570 7293
+cfl=<frozen importlib._bootstrap>
+cfn=_init_module_attrs
+calls=5 510
+570 140034
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module
+calls=5 656
+570 1094
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=5 0
+570 364
+
+fl=<frozen importlib._bootstrap>
+fn=_load_unlocked
+659 24433
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:310
+calls=5 310
+659 2552
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:314
+calls=5 314
+659 3282
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:321
+calls=5 321
+659 28444
+cfl=<frozen importlib._bootstrap>
+cfn=module_from_spec
+calls=5 570
+659 158267
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module
+calls=5 659
+659 5731550
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=5 0
+659 364
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec:716
+716 4011
+cfl=~
+cfn=<built-in method _imp.is_builtin>
+calls=4 0
+716 8387
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec:789
+789 3282
+cfl=~
+cfn=<built-in method _imp.is_frozen>
+calls=5 0
+789 2188
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:852
+852 7658
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=20 0
+852 2188
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:856
+856 6928
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=20 0
+856 2917
+
+fl=<frozen importlib._bootstrap>
+fn=_find_spec
+879 45584
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:716
+calls=5 716
+879 12398
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:789
+calls=5 789
+879 5470
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:852
+calls=20 852
+879 9846
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:856
+calls=20 856
+879 9846
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:613
+calls=5 613
+879 194005
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1133
+calls=5 1133
+879 1563713
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load_unlocked
+939 15316
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=1 214
+939 653492
+cfl=<frozen importlib._bootstrap>
+cfn=_load_unlocked
+calls=5 659
+939 5781875
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec
+calls=5 879
+939 1840864
+cfl=~
+cfn=<built-in method builtins.setattr>
+calls=1 0
+939 729
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=6 0
+939 1823
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load
+966 37561
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:159
+calls=5 159
+966 2552
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:163
+calls=5 163
+966 61264
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:170
+calls=5 170
+966 21150
+cfl=<frozen importlib._bootstrap>
+cfn=cb
+calls=5 190
+966 2552
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load_unlocked
+calls=5 939
+966 6176814
+
+fl=<frozen importlib._bootstrap>
+fn=_handle_fromlist
+996 13492
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=24 0
+996 18598
+
+fl=<frozen importlib._bootstrap_external>
+fn=_relax_case
+30 8752
+
+fl=<frozen importlib._bootstrap_external>
+fn=_r_long
+45 7293
+cfl=~
+cfn=<built-in method from_bytes>
+calls=10 0
+45 4011
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_join
+50 60535
+cfl=<frozen importlib._bootstrap_external>
+cfn=<listcomp>
+calls=86 52
+50 83509
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=86 0
+50 14222
+
+fl=<frozen importlib._bootstrap_external>
+fn=<listcomp>
+52 61629
+cfl=~
+cfn=<method 'rstrip' of 'str' objects>
+calls=182 0
+52 21880
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_split
+56 28079
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+56 2188
+cfl=~
+cfn=<method 'rsplit' of 'str' objects>
+calls=10 0
+56 15680
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_stat
+68 17139
+cfl=~
+cfn=<built-in method nt.stat>
+calls=30 0
+68 1090369
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_is_mode_type
+78 10575
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=8 68
+78 273504
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isfile
+87 4376
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type
+calls=7 78
+87 249435
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isdir
+92 1094
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type
+calls=1 78
+92 34643
+
+fl=<frozen importlib._bootstrap_external>
+fn=cache_from_source
+246 30267
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=10 50
+246 23339
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_split
+calls=10 56
+246 45948
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=10 0
+246 2552
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=10 0
+246 2917
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_cached
+342 9846
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=5 246
+342 66005
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=5 0
+342 4376
+
+fl=<frozen importlib._bootstrap_external>
+fn=_verbose_message
+366 20056
+
+fl=<frozen importlib._bootstrap_external>
+fn=_check_name_wrapper
+382 4376
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_filename
+calls=5 811
+382 729
+
+fl=<frozen importlib._bootstrap_external>
+fn=_validate_bytecode_header
+419 59806
+cfl=<frozen importlib._bootstrap_external>
+cfn=_r_long
+calls=10 45
+419 11304
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+419 1458
+
+fl=<frozen importlib._bootstrap_external>
+fn=_compile_bytecode
+474 16045
+cfl=<frozen importlib._bootstrap_external>
+cfn=_verbose_message
+calls=5 366
+474 2188
+cfl=~
+cfn=<built-in method _imp._fix_co_filename>
+calls=5 0
+474 4011
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=5 0
+474 1458
+cfl=~
+cfn=<built-in method marshal.loads>
+calls=5 0
+474 557218
+
+fl=<frozen importlib._bootstrap_external>
+fn=spec_from_file_location
+513 13492
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:372
+calls=5 372
+513 5834
+
+fl=<frozen importlib._bootstrap_external>
+fn=_open_registry
+591 11304
+cfl=~
+cfn=<built-in method winreg.OpenKey>
+calls=10 0
+591 149880
+
+fl=<frozen importlib._bootstrap_external>
+fn=_search_registry
+598 20421
+cfl=<frozen importlib._bootstrap_external>
+cfn=_open_registry
+calls=5 591
+598 161185
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=5 0
+598 9116
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:613
+613 3282
+cfl=<frozen importlib._bootstrap_external>
+cfn=_search_registry
+calls=5 598
+613 190723
+
+fl=<frozen importlib._bootstrap_external>
+fn=create_module
+656 1094
+
+fl=<frozen importlib._bootstrap_external>
+fn=exec_module
+659 15680
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=5 214
+659 5237419
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_code
+calls=5 729
+659 1403987
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_code
+729 39384
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=5 246
+729 39019
+cfl=<frozen importlib._bootstrap_external>
+cfn=_verbose_message
+calls=5 366
+729 2188
+cfl=<frozen importlib._bootstrap_external>
+cfn=_check_name_wrapper
+calls=5 382
+729 5105
+cfl=<frozen importlib._bootstrap_external>
+cfn=_validate_bytecode_header
+calls=5 419
+729 72569
+cfl=<frozen importlib._bootstrap_external>
+cfn=_compile_bytecode
+calls=5 474
+729 580922
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data
+calls=5 816
+729 476261
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_stats
+calls=5 826
+729 188535
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__:786
+786 5470
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_filename
+811 729
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_data
+816 303042
+cfl=~
+cfn=<method 'read' of '_io.FileIO' objects>
+calls=5 0
+816 173219
+
+fl=<frozen importlib._bootstrap_external>
+fn=path_stats
+826 6564
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=5 68
+826 181971
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_hooks
+1047 59441
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_hook_for_FileFinder
+calls=1 1301
+1047 57982
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_importer_cache
+1064 17139
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_hooks
+calls=1 1047
+1064 117424
+cfl=~
+cfn=<built-in method nt.getcwd>
+calls=8 0
+1064 5834
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec:1101
+1101 36831
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_importer_cache
+calls=21 1064
+1101 140398
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1215
+calls=17 1215
+1101 1373354
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=17 0
+1101 4740
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=21 0
+1101 4011
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1133
+1133 4376
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1101
+calls=5 1101
+1133 1559337
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__:1178
+1178 7658
+cfl=~
+cfn=<method 'extend' of 'list' objects>
+calls=3 0
+1178 11304
+
+fl=<frozen importlib._bootstrap_external>
+fn=<genexpr>
+1184 1823
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec:1210
+1210 9116
+cfl=<frozen importlib._bootstrap_external>
+cfn=spec_from_file_location
+calls=5 513
+1210 19327
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:786
+calls=5 786
+1210 5470
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1215
+1215 150244
+cfl=<frozen importlib._bootstrap_external>
+cfn=_relax_case
+calls=17 30
+1215 8752
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=76 50
+1215 134928
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=17 68
+1215 652033
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isfile
+calls=7 87
+1215 253811
+cfl=<frozen importlib._bootstrap_external>
+cfn=_verbose_message
+calls=72 366
+1215 15680
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1210
+calls=5 1210
+1215 33914
+cfl=<frozen importlib._bootstrap_external>
+cfn=_fill_cache
+calls=1 1260
+1215 94085
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=72 0
+1215 26985
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=17 0
+1215 2917
+
+fl=<frozen importlib._bootstrap_external>
+fn=_fill_cache
+1260 21150
+cfl=<frozen importlib._bootstrap_external>
+cfn=<setcomp>
+calls=1 1289
+1260 7658
+cfl=~
+cfn=<built-in method nt.listdir>
+calls=1 0
+1260 57982
+cfl=~
+cfn=<method 'add' of 'set' objects>
+calls=7 0
+1260 1458
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=6 0
+1260 2188
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=6 0
+1260 364
+cfl=~
+cfn=<method 'partition' of 'str' objects>
+calls=7 0
+1260 1823
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+1260 1458
+
+fl=<frozen importlib._bootstrap_external>
+fn=<setcomp>
+1289 3282
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=7 0
+1289 4376
+
+fl=<frozen importlib._bootstrap_external>
+fn=path_hook_for_FileFinder
+1301 3282
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isdir
+calls=1 92
+1301 35737
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1178
+calls=1 1178
+1301 18962
+
+fl=<string>
+fn=<module>
+1 7293
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=9 996
+1 14951
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=3 0
+1 81321
+
+fl=<string>
+fn=DefragResult
+5 6199
+
+fl=<string>
+fn=ParseResult
+5 7658
+
+fl=<string>
+fn=SplitResult
+5 7293
+
+fl=C:\Anaconda3\lib\_weakrefset.py
+fn=__init__
+36 4376
+
+fl=C:\Anaconda3\lib\abc.py
+fn=__new__
+132 17504
+cfl=C:\Anaconda3\lib\_weakrefset.py
+cfn=__init__
+calls=3 36
+132 4376
+cfl=C:\Anaconda3\lib\abc.py
+cfn=<setcomp>
+calls=1 135
+132 6928
+cfl=~
+cfn=<built-in method __new__ of type object at 0x000000007280DE40>
+calls=1 0
+132 24433
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=5 0
+132 1094
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+132 0
+
+fl=C:\Anaconda3\lib\abc.py
+fn=<setcomp>
+135 1823
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=8 0
+135 5105
+
+fl=C:\Anaconda3\lib\collections\__init__.py
+fn=namedtuple
+356 82051
+cfl=~
+cfn=<built-in method builtins.exec>
+calls=3 0
+356 1290938
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+356 0
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+356 729
+cfl=~
+cfn=<built-in method builtins.repr>
+calls=3 0
+356 6199
+cfl=~
+cfn=<built-in method sys._getframe>
+calls=3 0
+356 1458
+cfl=~
+cfn=<method '__contains__' of 'frozenset' objects>
+calls=16 0
+356 2552
+cfl=~
+cfn=<method 'add' of 'set' objects>
+calls=13 0
+356 2917
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=3 0
+356 29903
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=3 0
+356 364
+cfl=~
+cfn=<method 'isidentifier' of 'str' objects>
+calls=16 0
+356 1823
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=6 0
+356 66005
+cfl=~
+cfn=<method 'replace' of 'str' objects>
+calls=6 0
+356 5470
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=3 0
+356 2917
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=13 0
+356 3282
+
+fl=C:\Anaconda3\lib\collections\__init__.py
+fn=<genexpr>:419
+419 23339
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=13 0
+419 7293
+
+fl=C:\Anaconda3\lib\collections\__init__.py
+fn=<genexpr>:421
+421 7293
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=13 0
+421 17504
+
+fl=C:\Anaconda3\lib\contextlib.py
+fn=contextmanager
+103 1458
+cfl=C:\Anaconda3\lib\functools.py
+cfn=update_wrapper
+calls=1 43
+103 5105
+cfl=C:\Anaconda3\lib\functools.py
+cfn=wraps
+calls=1 73
+103 364
+
+fl=C:\Anaconda3\lib\fnmatch.py
+fn=<module>
+11 9846
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 966
+11 664432
+cfl=C:\Anaconda3\lib\functools.py
+cfn=lru_cache
+calls=1 391
+11 1094
+cfl=C:\Anaconda3\lib\functools.py
+cfn=decorating_function
+calls=1 422
+11 16774
+
+fl=C:\Anaconda3\lib\functools.py
+fn=update_wrapper
+43 49230
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=105 0
+43 35737
+cfl=~
+cfn=<built-in method builtins.setattr>
+calls=63 0
+43 11304
+cfl=~
+cfn=<method 'update' of 'dict' objects>
+calls=15 0
+43 3282
+
+fl=C:\Anaconda3\lib\functools.py
+fn=wraps
+73 5834
+
+fl=C:\Anaconda3\lib\functools.py
+fn=lru_cache
+391 2188
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+391 364
+
+fl=C:\Anaconda3\lib\functools.py
+fn=decorating_function
+422 4376
+cfl=C:\Anaconda3\lib\functools.py
+cfn=update_wrapper
+calls=2 43
+422 20056
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=<module>
+1 44854
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=2 966
+1 4702081
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=7 996
+1 10940
+cfl=C:\Anaconda3\lib\contextlib.py
+cfn=contextmanager
+calls=1 103
+1 6928
+cfl=C:\Anaconda3\lib\functools.py
+cfn=lru_cache
+calls=1 391
+1 1458
+cfl=C:\Anaconda3\lib\functools.py
+cfn=decorating_function
+calls=1 422
+1 7658
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=__init__
+calls=2 48
+1 1458
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=17 0
+1 457298
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+1 0
+cfl=~
+cfn=<built-in method sys.getwindowsversion>
+calls=1 0
+1 2917
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_Flavour
+44 2188
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=__init__
+48 1458
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_WindowsFlavour
+107 25162
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=<genexpr>:119
+calls=27 119
+107 9481
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=<genexpr>:120
+calls=27 120
+107 5834
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=<setcomp>:126
+calls=1 126
+107 3282
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=<setcomp>:127
+calls=1 127
+107 2188
+cfl=~
+cfn=<built-in method builtins.ord>
+calls=4 0
+107 729
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=<genexpr>:119
+119 5470
+cfl=~
+cfn=<built-in method builtins.chr>
+calls=26 0
+119 4011
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=<genexpr>:120
+120 3282
+cfl=~
+cfn=<built-in method builtins.chr>
+calls=26 0
+120 2552
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=<setcomp>:126
+126 3282
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=<setcomp>:127
+127 2188
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_PosixFlavour
+259 2552
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_Accessor
+361 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_NormalAccessor
+366 9481
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_wrap_strfunc
+calls=9 368
+366 78039
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_wrap_binary_strfunc
+calls=3 374
+366 18598
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+366 1094
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_wrap_strfunc
+368 13857
+cfl=C:\Anaconda3\lib\functools.py
+cfn=update_wrapper
+calls=9 43
+368 59806
+cfl=C:\Anaconda3\lib\functools.py
+cfn=wraps
+calls=9 73
+368 4376
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_wrap_binary_strfunc
+374 2917
+cfl=C:\Anaconda3\lib\functools.py
+cfn=update_wrapper
+calls=3 43
+374 14586
+cfl=C:\Anaconda3\lib\functools.py
+cfn=wraps
+calls=3 73
+374 1094
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_Selector
+468 729
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_TerminatingSelector
+489 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_PreciseSelector
+495 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_WildcardSelector
+513 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_RecursiveWildcardSelector
+535 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=_PathParents
+574 1094
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=PurePath
+602 12763
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=PurePosixPath
+947 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=PureWindowsPath
+952 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=Path
+960 8022
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=PosixPath
+1416 364
+
+fl=C:\Anaconda3\lib\pathlib.py
+fn=WindowsPath
+1419 364
+
+fl=C:\Anaconda3\lib\posixpath.py
+fn=<module>
+11 19692
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 996
+11 1823
+
+fl=C:\Anaconda3\lib\re.py
+fn=compile
+222 1458
+cfl=C:\Anaconda3\lib\re.py
+cfn=_compile
+calls=1 278
+222 227555
+
+fl=C:\Anaconda3\lib\re.py
+fn=_compile
+278 10575
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=isstring
+calls=1 513
+278 21150
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=compile
+calls=1 531
+278 194370
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+278 1094
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+278 364
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=_compile
+64 12034
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_compile
+calls=2 64
+64 35373
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_compile_charset
+calls=1 221
+64 21880
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_simple
+calls=1 386
+64 2188
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__getitem__
+calls=4 157
+64 2552
+cfl=~
+cfn=<built-in method builtins.len>
+calls=4 0
+64 364
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=11 0
+64 364
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=_compile_charset
+221 4011
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_optimize_charset
+calls=1 248
+221 17504
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+221 364
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=_optimize_charset
+248 14951
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+248 0
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+248 729
+cfl=~
+cfn=<method 'find' of 'bytearray' objects>
+calls=3 0
+248 1823
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=_simple
+386 1458
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__getitem__
+calls=1 157
+386 364
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=getwidth
+calls=1 167
+386 364
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=_compile_info
+412 6928
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__len__
+calls=1 153
+412 364
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__getitem__
+calls=2 157
+412 1094
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=getwidth
+calls=1 167
+412 2917
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+412 1094
+cfl=~
+cfn=<built-in method builtins.min>
+calls=1 0
+412 0
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=5 0
+412 1458
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=isstring
+513 1823
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+513 20056
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=_code
+516 2917
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_compile
+calls=1 64
+516 39384
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_compile_info
+calls=1 412
+516 13857
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+516 0
+
+fl=C:\Anaconda3\lib\sre_compile.py
+fn=compile
+531 25527
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=isstring
+calls=1 513
+531 729
+cfl=C:\Anaconda3\lib\sre_compile.py
+cfn=_code
+calls=1 516
+531 56159
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=groups
+calls=2 75
+531 729
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=parse
+calls=1 819
+531 108307
+cfl=~
+cfn=<built-in method _sre.compile>
+calls=1 0
+531 2188
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+531 729
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__init__:70
+70 19327
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=groups
+75 1458
+cfl=~
+cfn=<built-in method builtins.len>
+calls=4 0
+75 364
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=opengroup
+78 3646
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=groups
+calls=2 75
+78 1094
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+78 364
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=closegroup
+90 1094
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=getwidth
+calls=1 167
+90 8022
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__init__:105
+105 2188
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__len__
+153 1094
+cfl=~
+cfn=<built-in method builtins.len>
+calls=5 0
+153 364
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__getitem__
+157 5105
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__init__:105
+calls=1 105
+157 364
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+157 2188
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__setitem__
+161 364
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=append
+165 1094
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+165 364
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=getwidth
+167 9846
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=getwidth
+calls=2 167
+167 4011
+cfl=~
+cfn=<built-in method builtins.min>
+calls=6 0
+167 1458
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__init__:217
+217 3282
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__next
+calls=1 226
+217 1823
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+217 0
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=__next
+226 7293
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=match
+242 1823
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__next
+calls=2 226
+242 2188
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=get
+247 2552
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__next
+calls=6 226
+247 3282
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=tell
+276 2917
+cfl=~
+cfn=<built-in method builtins.len>
+calls=5 0
+276 729
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=_parse_sub
+429 6564
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=match
+calls=2 242
+429 364
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=tell
+calls=2 276
+429 1823
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=_parse
+calls=2 491
+429 68558
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+429 0
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+429 729
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=_parse
+491 29903
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=opengroup
+calls=1 78
+491 5105
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=closegroup
+calls=1 90
+491 9116
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__init__:105
+calls=2 105
+491 1823
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__len__
+calls=2 153
+491 729
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__getitem__
+calls=3 157
+491 3646
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__setitem__
+calls=1 161
+491 364
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=append
+calls=2 165
+491 1458
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=match
+calls=5 242
+491 3646
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=get
+calls=6 247
+491 5834
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=tell
+calls=3 276
+491 1823
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=_parse_sub
+calls=1 429
+491 36831
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+491 729
+cfl=~
+cfn=<built-in method builtins.ord>
+calls=2 0
+491 364
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+491 0
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=fix_flags
+797 1458
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+797 0
+
+fl=C:\Anaconda3\lib\sre_parse.py
+fn=parse
+819 8387
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__init__:70
+calls=1 70
+819 19327
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__init__:217
+calls=1 217
+819 5105
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=_parse_sub
+calls=1 429
+819 74028
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=fix_flags
+calls=1 797
+819 1458
+
+fl=C:\Anaconda3\lib\urllib\__init__.py
+fn=<module>
+1 0
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=<module>
+28 48501
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 996
+28 2188
+cfl=C:\Anaconda3\lib\collections\__init__.py
+cfn=namedtuple
+calls=3 356
+28 1496614
+cfl=C:\Anaconda3\lib\re.py
+cfn=compile
+calls=1 222
+28 229014
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=_fix_result_transcoding
+calls=1 275
+28 2552
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=12 0
+28 210051
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=_ResultMixinStr
+117 729
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=_ResultMixinBytes
+125 729
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=_NetlocResultMixinBase
+133 3282
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=_NetlocResultMixinStr
+165 1094
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=_NetlocResultMixinBytes
+195 1094
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=DefragResult
+237 729
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=SplitResult
+245 364
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=ParseResult
+250 364
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=DefragResultBytes
+256 364
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=SplitResultBytes
+264 364
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=ParseResultBytes
+269 364
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=_fix_result_transcoding
+275 2552
+
+fl=C:\Anaconda3\lib\urllib\parse.py
+fn=Quoter
+648 1094
+
+fl=TryProfiling.py
+fn=<module>
+1 7658
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 966
+1 6207812
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 996
+1 2188
+cfl=TryProfiling.py
+cfn=mainfunc
+calls=1 26
+1 4257909554
+
+fl=TryProfiling.py
+fn=cpu_work
+3 4257858864
+
+fl=TryProfiling.py
+fn=f1
+20 27350
+cfl=TryProfiling.py
+cfn=cpu_work
+calls=10 3
+20 4257858864
+
+fl=TryProfiling.py
+fn=mainfunc
+26 23339
+cfl=TryProfiling.py
+cfn=f1
+calls=10 20
+26 4257886215
+
+fl=~
+fn=<built-in method __new__ of type object at 0x000000007280DE40>
+0 24433
+
+fl=~
+fn=<built-in method _imp._fix_co_filename>
+0 4011
+
+fl=~
+fn=<built-in method _imp.acquire_lock>
+0 2188
+
+fl=~
+fn=<built-in method _imp.is_builtin>
+0 8387
+
+fl=~
+fn=<built-in method _imp.is_frozen>
+0 2188
+
+fl=~
+fn=<built-in method _imp.release_lock>
+0 3646
+
+fl=~
+fn=<built-in method _sre.compile>
+0 2188
+
+fl=~
+fn=<built-in method _thread.allocate_lock>
+0 13128
+
+fl=~
+fn=<built-in method _thread.get_ident>
+0 2188
+
+fl=~
+fn=<built-in method builtins.__build_class__>
+0 478085
+cfl=<string>
+cfn=DefragResult
+calls=1 5
+0 6199
+cfl=<string>
+cfn=ParseResult
+calls=1 5
+0 7658
+cfl=<string>
+cfn=SplitResult
+calls=1 5
+0 7293
+cfl=C:\Anaconda3\lib\abc.py
+cfn=__new__
+calls=1 132
+0 54336
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_Flavour
+calls=1 44
+0 2188
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_WindowsFlavour
+calls=1 107
+0 46678
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_PosixFlavour
+calls=1 259
+0 2552
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_Accessor
+calls=1 361
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_NormalAccessor
+calls=1 366
+0 107213
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_Selector
+calls=1 468
+0 729
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_TerminatingSelector
+calls=1 489
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_PreciseSelector
+calls=1 495
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_WildcardSelector
+calls=1 513
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_RecursiveWildcardSelector
+calls=1 535
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=_PathParents
+calls=1 574
+0 1094
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=PurePath
+calls=1 602
+0 12763
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=PurePosixPath
+calls=1 947
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=PureWindowsPath
+calls=1 952
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=Path
+calls=1 960
+0 8022
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=PosixPath
+calls=1 1416
+0 364
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=WindowsPath
+calls=1 1419
+0 364
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=_ResultMixinStr
+calls=1 117
+0 729
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=_ResultMixinBytes
+calls=1 125
+0 729
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=_NetlocResultMixinBase
+calls=1 133
+0 3282
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=_NetlocResultMixinStr
+calls=1 165
+0 1094
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=_NetlocResultMixinBytes
+calls=1 195
+0 1094
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=DefragResult
+calls=1 237
+0 729
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=SplitResult
+calls=1 245
+0 364
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=ParseResult
+calls=1 250
+0 364
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=DefragResultBytes
+calls=1 256
+0 364
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=SplitResultBytes
+calls=1 264
+0 364
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=ParseResultBytes
+calls=1 269
+0 364
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=Quoter
+calls=1 648
+0 1094
+
+fl=~
+fn=<built-in method builtins.__import__>
+0 1823
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 966
+0 649845
+
+fl=~
+fn=<built-in method builtins.any>
+0 5105
+cfl=<frozen importlib._bootstrap>
+cfn=<genexpr>
+calls=20 324
+0 3646
+
+fl=~
+fn=<built-in method builtins.chr>
+0 6564
+
+fl=~
+fn=<built-in method builtins.exec>
+0 1179714
+cfl=<string>
+cfn=<module>
+calls=1 1
+0 37561
+cfl=C:\Anaconda3\lib\fnmatch.py
+cfn=<module>
+calls=1 11
+0 692147
+cfl=C:\Anaconda3\lib\pathlib.py
+cfn=<module>
+calls=1 1
+0 5235596
+cfl=C:\Anaconda3\lib\posixpath.py
+cfn=<module>
+calls=1 11
+0 21515
+cfl=C:\Anaconda3\lib\urllib\__init__.py
+cfn=<module>
+calls=1 1
+0 0
+cfl=C:\Anaconda3\lib\urllib\parse.py
+cfn=<module>
+calls=1 28
+0 1988921
+cfl=TryProfiling.py
+cfn=<module>
+calls=1 1
+0 4264127212
+
+fl=~
+fn=<built-in method builtins.getattr>
+0 60535
+
+fl=~
+fn=<built-in method builtins.hasattr>
+0 25162
+
+fl=~
+fn=<built-in method builtins.isinstance>
+0 29173
+
+fl=~
+fn=<built-in method builtins.len>
+0 8022
+cfl=C:\Anaconda3\lib\sre_parse.py
+cfn=__len__
+calls=2 153
+0 364
+
+fl=~
+fn=<built-in method builtins.min>
+0 1458
+
+fl=~
+fn=<built-in method builtins.ord>
+0 1094
+
+fl=~
+fn=<built-in method builtins.repr>
+0 6199
+
+fl=~
+fn=<built-in method builtins.setattr>
+0 12034
+
+fl=~
+fn=<built-in method from_bytes>
+0 4011
+
+fl=~
+fn=<built-in method marshal.loads>
+0 557218
+
+fl=~
+fn=<built-in method nt.getcwd>
+0 5834
+
+fl=~
+fn=<built-in method nt.listdir>
+0 57982
+
+fl=~
+fn=<built-in method nt.stat>
+0 1090369
+
+fl=~
+fn=<built-in method sys._getframe>
+0 1458
+
+fl=~
+fn=<built-in method sys.getwindowsversion>
+0 2917
+
+fl=~
+fn=<built-in method winreg.OpenKey>
+0 149880
+
+fl=~
+fn=<method '__contains__' of 'frozenset' objects>
+0 2552
+
+fl=~
+fn=<method 'add' of 'set' objects>
+0 4376
+
+fl=~
+fn=<method 'append' of 'list' objects>
+0 4376
+
+fl=~
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 364
+
+fl=~
+fn=<method 'endswith' of 'str' objects>
+0 4376
+
+fl=~
+fn=<method 'extend' of 'list' objects>
+0 9481
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>
+calls=8 1184
+0 1823
+
+fl=~
+fn=<method 'find' of 'bytearray' objects>
+0 1823
+
+fl=~
+fn=<method 'format' of 'str' objects>
+0 92991
+
+fl=~
+fn=<method 'get' of 'dict' objects>
+0 364
+
+fl=~
+fn=<method 'isidentifier' of 'str' objects>
+0 1823
+
+fl=~
+fn=<method 'items' of 'dict' objects>
+0 729
+
+fl=~
+fn=<method 'join' of 'str' objects>
+0 27350
+cfl=C:\Anaconda3\lib\collections\__init__.py
+cfn=<genexpr>:419
+calls=16 419
+0 30632
+cfl=C:\Anaconda3\lib\collections\__init__.py
+cfn=<genexpr>:421
+calls=16 421
+0 24797
+
+fl=~
+fn=<method 'lower' of 'str' objects>
+0 4740
+
+fl=~
+fn=<method 'partition' of 'str' objects>
+0 1823
+
+fl=~
+fn=<method 'read' of '_io.FileIO' objects>
+0 173219
+
+fl=~
+fn=<method 'replace' of 'str' objects>
+0 5470
+
+fl=~
+fn=<method 'rpartition' of 'str' objects>
+0 9481
+
+fl=~
+fn=<method 'rsplit' of 'str' objects>
+0 15680
+
+fl=~
+fn=<method 'rstrip' of 'str' objects>
+0 21880
+
+fl=~
+fn=<method 'split' of 'str' objects>
+0 2917
+
+fl=~
+fn=<method 'startswith' of 'str' objects>
+0 4740
+
+fl=~
+fn=<method 'update' of 'dict' objects>
+0 3282
+
